@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>967013279951-h8hrekuc1aee3ghem4258sgtgmkj1ftd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.967013279951-h8hrekuc1aee3ghem4258sgtgmkj1ftd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAqhQ-PErd1I517Xc6WifKf96Sa-2OJPRM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>967013279951</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kerwin.isilAdmin</string>
+	<key>PROJECT_ID</key>
+	<string>intraisil</string>
+	<key>STORAGE_BUCKET</key>
+	<string>intraisil.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:967013279951:ios:bc49bf438fa98811312fba</string>
+	<key>DATABASE_URL</key>
+	<string>https://intraisil-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8NF-b0-aqy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enrollment View Controller-->
+        <scene sceneID="pX4-EK-sy1">
+            <objects>
+                <viewController id="8NF-b0-aqy" customClass="EnrollmentViewController" customModule="isilAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gKG-zz-oig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZI9-Nf-A3j">
+                                <rect key="frame" x="0.0" y="806.5" width="414" height="89.5"/>
+                                <color key="backgroundColor" name="Main"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PANEL DE MATRICULA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7J-M5-vWI">
+                                <rect key="frame" x="20" y="104" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-ei-G5U">
+                                <rect key="frame" x="20" y="234" width="374" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Uu7-Qg-sda"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Configurar matrícula
+( Ver listado de carreras )</string>
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="8rR-6w-YQT" kind="show" id="6MK-2d-l1W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZ4-9O-eAK">
+                                <rect key="frame" x="20" y="354" width="374" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Administrar cursos disponibles
+( Agregar o eliminar cursos )</string>
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="wcj-Mi-dHe" kind="show" id="nD5-ix-duX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3wK-mA-z54"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3wK-mA-z54" firstAttribute="trailing" secondItem="u7J-M5-vWI" secondAttribute="trailing" constant="20" id="1tf-Xj-GS2"/>
+                            <constraint firstAttribute="bottom" secondItem="ZI9-Nf-A3j" secondAttribute="bottom" id="471-RD-Jsh"/>
+                            <constraint firstItem="a0q-ei-G5U" firstAttribute="leading" secondItem="XZ4-9O-eAK" secondAttribute="leading" id="8k4-Xk-ytg"/>
+                            <constraint firstItem="3wK-mA-z54" firstAttribute="trailing" secondItem="a0q-ei-G5U" secondAttribute="trailing" constant="20" id="C3C-r6-OEw"/>
+                            <constraint firstItem="ZI9-Nf-A3j" firstAttribute="leading" secondItem="3wK-mA-z54" secondAttribute="leading" id="Cb7-0o-Nxn"/>
+                            <constraint firstItem="XZ4-9O-eAK" firstAttribute="top" secondItem="a0q-ei-G5U" secondAttribute="bottom" constant="40" id="SEP-0E-XQz"/>
+                            <constraint firstItem="a0q-ei-G5U" firstAttribute="trailing" secondItem="XZ4-9O-eAK" secondAttribute="trailing" id="UOV-O6-C8z"/>
+                            <constraint firstItem="ZI9-Nf-A3j" firstAttribute="trailing" secondItem="3wK-mA-z54" secondAttribute="trailing" id="eCq-vS-Fhe"/>
+                            <constraint firstItem="a0q-ei-G5U" firstAttribute="top" secondItem="u7J-M5-vWI" secondAttribute="bottom" constant="100" id="fdz-I4-ed7"/>
+                            <constraint firstItem="a0q-ei-G5U" firstAttribute="leading" secondItem="3wK-mA-z54" secondAttribute="leading" constant="20" id="hQg-fK-8UP"/>
+                            <constraint firstItem="a0q-ei-G5U" firstAttribute="height" secondItem="XZ4-9O-eAK" secondAttribute="height" id="n0f-zm-oR3"/>
+                            <constraint firstItem="u7J-M5-vWI" firstAttribute="top" secondItem="3wK-mA-z54" secondAttribute="top" constant="60" id="reE-Ef-2ca"/>
+                            <constraint firstItem="ZI9-Nf-A3j" firstAttribute="height" secondItem="gKG-zz-oig" secondAttribute="height" multiplier="0.0998884" id="w9l-SV-Pfy"/>
+                            <constraint firstItem="u7J-M5-vWI" firstAttribute="leading" secondItem="3wK-mA-z54" secondAttribute="leading" constant="20" id="yA6-21-og9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABw-vD-uMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.768115942029" y="26.785714285714285"/>
+        </scene>
+        <!--EnableEnrollment-->
+        <scene sceneID="o0f-96-pR3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EnableEnrollment" id="8rR-6w-YQT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3OK-az-7l6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6Z-CO-X3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-96"/>
+        </scene>
+        <!--ManageCourses-->
+        <scene sceneID="ddL-Eo-ccJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManageCourses" id="wcj-Mi-dHe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="saQ-nN-kES"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLf-YL-Yjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.0" green="0.68235294117647061" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

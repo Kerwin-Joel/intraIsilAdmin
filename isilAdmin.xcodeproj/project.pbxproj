@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080D2EA725E473E000EF47BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EA625E473E000EF47BF /* AppDelegate.swift */; };
+		080D2EA925E473E000EF47BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EA825E473E000EF47BF /* SceneDelegate.swift */; };
+		080D2EAE25E473E000EF47BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2EAC25E473E000EF47BF /* Main.storyboard */; };
+		080D2EB025E473E200EF47BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080D2EAF25E473E200EF47BF /* Assets.xcassets */; };
+		080D2EB325E473E200EF47BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2EB125E473E200EF47BF /* LaunchScreen.storyboard */; };
+		080D2EC525E4B04E00EF47BF /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2EC425E4B04E00EF47BF /* LoginView.storyboard */; };
+		080D2EC825E4B08300EF47BF /* AdminUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2EC725E4B08300EF47BF /* AdminUser.storyboard */; };
+		080D2ECB25E4B0A200EF47BF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ECA25E4B0A200EF47BF /* Profile.storyboard */; };
+		080D2ECE25E4B0C700EF47BF /* Careers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ECD25E4B0C700EF47BF /* Careers.storyboard */; };
+		080D2ED125E4B0D800EF47BF /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ED025E4B0D800EF47BF /* Locations.storyboard */; };
+		080D2ED425E4B0FE00EF47BF /* Courses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ED325E4B0FE00EF47BF /* Courses.storyboard */; };
+		080D2ED725E4B11C00EF47BF /* Students.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ED625E4B11C00EF47BF /* Students.storyboard */; };
+		080D2EDA25E4B13200EF47BF /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D2ED925E4B13200EF47BF /* Enrollment.storyboard */; };
+		080D2EE525E5736C00EF47BF /* EnrollmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EE425E5736C00EF47BF /* EnrollmentViewController.swift */; };
+		080D2EE925E5737B00EF47BF /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EE825E5737B00EF47BF /* StudentsViewController.swift */; };
+		080D2EEC25E5738800EF47BF /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EEB25E5738800EF47BF /* CoursesViewController.swift */; };
+		080D2EF025E573A000EF47BF /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EEF25E573A000EF47BF /* LocationsViewController.swift */; };
+		080D2EF425E573B000EF47BF /* CareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EF325E573B000EF47BF /* CareersViewController.swift */; };
+		080D2EF725E573BA00EF47BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EF625E573BA00EF47BF /* ProfileViewController.swift */; };
+		080D2EFA25E573C800EF47BF /* AdminUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EF925E573C800EF47BF /* AdminUserViewController.swift */; };
+		080D2EFD25E573D000EF47BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080D2EFC25E573D000EF47BF /* LoginViewController.swift */; };
+		082F54C625EE984E00364259 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F54C525EE984E00364259 /* UpdateProfileViewController.swift */; };
+		082F54E025EF03D000364259 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F54DF25EF03D000364259 /* AddStudentViewController.swift */; };
+		082F54E325EF1C0E00364259 /* ListStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F54E225EF1C0E00364259 /* ListStudentsViewController.swift */; };
+		082F54EA25EFCF7500364259 /* ListStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F54E925EFCF7500364259 /* ListStudentViewController.swift */; };
+		082F550525F0093900364259 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F550425F0093900364259 /* Student.swift */; };
+		082F550925F0210A00364259 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F550725F0210900364259 /* MyCustomTableViewCell.swift */; };
+		082F550A25F0210A00364259 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082F550825F0210A00364259 /* MyCustomTableViewCell.xib */; };
+		082F550D25F0314600364259 /* UpdateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F550C25F0314600364259 /* UpdateStudentViewController.swift */; };
+		0893368D25EAAD5D00197D78 /* ListaLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893368C25EAAD5D00197D78 /* ListaLocations.storyboard */; };
+		0893369025EAAD6900197D78 /* FormVenues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893368F25EAAD6900197D78 /* FormVenues.storyboard */; };
+		0893369525EABF3300197D78 /* ListCourses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893369425EABF3300197D78 /* ListCourses.storyboard */; };
+		0893369825EAD97100197D78 /* AddCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893369725EAD97100197D78 /* AddCourse.storyboard */; };
+		0893369C25EB1CB100197D78 /* ListStudents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893369B25EB1CB100197D78 /* ListStudents.storyboard */; };
+		0893369F25EB1CEE00197D78 /* AddStudents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893369E25EB1CEE00197D78 /* AddStudents.storyboard */; };
+		089336A425EC0A2900197D78 /* EnableEnrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089336A325EC0A2900197D78 /* EnableEnrollment.storyboard */; };
+		089336A725EC105B00197D78 /* ManageCourses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089336A625EC105B00197D78 /* ManageCourses.storyboard */; };
+		089336AB25EC198C00197D78 /* ListCoursesManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089336AA25EC198C00197D78 /* ListCoursesManager.storyboard */; };
+		089336AE25EC19A900197D78 /* AddCourses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089336AD25EC19A900197D78 /* AddCourses.storyboard */; };
+		08C91EAF25E8087700369D0F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EAE25E8087700369D0F /* Color.xcassets */; };
+		08C91EB425E9894400369D0F /* ListCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB325E9894400369D0F /* ListCareers.storyboard */; };
+		08C91EB725E98A2D00369D0F /* FormCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB625E98A2D00369D0F /* FormCareers.storyboard */; };
+		55ABBA8C25F194BA009C059F /* AddCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBA8B25F194BA009C059F /* AddCoursesViewController.swift */; };
+		6815344EC31385CA831AF4B4 /* Pods_isilAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2144E1F7CF7D31AAB9F1F7B /* Pods_isilAdmin.framework */; };
+		6C0D1C4225F27FD100433C1D /* ListVenuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C4125F27FD100433C1D /* ListVenuesViewController.swift */; };
+		6C0D1C4525F2800C00433C1D /* ListVenuesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C4425F2800C00433C1D /* ListVenuesViewCell.swift */; };
+		6C0D1C4825F2808E00433C1D /* CampusBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C4725F2808E00433C1D /* CampusBE.swift */; };
+		6C0D1C4F25F29EE400433C1D /* FormVenuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C4E25F29EE400433C1D /* FormVenuesViewController.swift */; };
+		6C0D1C5625F2D7D500433C1D /* ListCareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C5525F2D7D500433C1D /* ListCareersViewController.swift */; };
+		6C0D1C5A25F2D7FE00433C1D /* FormCareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C5925F2D7FE00433C1D /* FormCareersViewController.swift */; };
+		6C0D1C5D25F2D9DC00433C1D /* CareersBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C5C25F2D9DC00433C1D /* CareersBE.swift */; };
+		6C0D1C6025F2DB4E00433C1D /* ListCareersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C5F25F2DB4E00433C1D /* ListCareersViewCell.swift */; };
+		6C0D1C6725F2F43A00433C1D /* ListCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C6625F2F43A00433C1D /* ListCoursesViewController.swift */; };
+		6C0D1C6B25F2F44400433C1D /* FormCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C6A25F2F44400433C1D /* FormCoursesViewController.swift */; };
+		6C0D1C6E25F2F45600433C1D /* CourseBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C6D25F2F45600433C1D /* CourseBE.swift */; };
+		6C0D1C7125F2F46900433C1D /* ListCourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C7025F2F46900433C1D /* ListCourseViewCell.swift */; };
+		6C0D1C7425F2FA8400433C1D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D1C7325F2FA8400433C1D /* ImageView.swift */; };
+		6C7A402825EDC8BA001ECC04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C7A402725EDC8BA001ECC04 /* GoogleService-Info.plist */; };
+		6C7A404425EDE478001ECC04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A404325EDE478001ECC04 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080D2EA325E473E000EF47BF /* isilAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isilAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		080D2EA625E473E000EF47BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		080D2EA825E473E000EF47BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		080D2EAD25E473E000EF47BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		080D2EAF25E473E200EF47BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		080D2EB225E473E200EF47BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		080D2EB425E473E200EF47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		080D2EC425E4B04E00EF47BF /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		080D2EC725E4B08300EF47BF /* AdminUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminUser.storyboard; sourceTree = "<group>"; };
+		080D2ECA25E4B0A200EF47BF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		080D2ECD25E4B0C700EF47BF /* Careers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Careers.storyboard; sourceTree = "<group>"; };
+		080D2ED025E4B0D800EF47BF /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
+		080D2ED325E4B0FE00EF47BF /* Courses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Courses.storyboard; sourceTree = "<group>"; };
+		080D2ED625E4B11C00EF47BF /* Students.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Students.storyboard; sourceTree = "<group>"; };
+		080D2ED925E4B13200EF47BF /* Enrollment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Enrollment.storyboard; sourceTree = "<group>"; };
+		080D2EE425E5736C00EF47BF /* EnrollmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentViewController.swift; sourceTree = "<group>"; };
+		080D2EE825E5737B00EF47BF /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		080D2EEB25E5738800EF47BF /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		080D2EEF25E573A000EF47BF /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		080D2EF325E573B000EF47BF /* CareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersViewController.swift; sourceTree = "<group>"; };
+		080D2EF625E573BA00EF47BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		080D2EF925E573C800EF47BF /* AdminUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUserViewController.swift; sourceTree = "<group>"; };
+		080D2EFC25E573D000EF47BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		082F54C525EE984E00364259 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		082F54DF25EF03D000364259 /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		082F54E225EF1C0E00364259 /* ListStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsViewController.swift; sourceTree = "<group>"; };
+		082F54E925EFCF7500364259 /* ListStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentViewController.swift; sourceTree = "<group>"; };
+		082F550425F0093900364259 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		082F550725F0210900364259 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		082F550825F0210A00364259 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
+		082F550C25F0314600364259 /* UpdateStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStudentViewController.swift; sourceTree = "<group>"; };
+		0893368C25EAAD5D00197D78 /* ListaLocations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListaLocations.storyboard; sourceTree = "<group>"; };
+		0893368F25EAAD6900197D78 /* FormVenues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormVenues.storyboard; sourceTree = "<group>"; };
+		0893369425EABF3300197D78 /* ListCourses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCourses.storyboard; sourceTree = "<group>"; };
+		0893369725EAD97100197D78 /* AddCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCourse.storyboard; sourceTree = "<group>"; };
+		0893369B25EB1CB100197D78 /* ListStudents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListStudents.storyboard; sourceTree = "<group>"; };
+		0893369E25EB1CEE00197D78 /* AddStudents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudents.storyboard; sourceTree = "<group>"; };
+		089336A325EC0A2900197D78 /* EnableEnrollment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnableEnrollment.storyboard; sourceTree = "<group>"; };
+		089336A625EC105B00197D78 /* ManageCourses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageCourses.storyboard; sourceTree = "<group>"; };
+		089336AA25EC198C00197D78 /* ListCoursesManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCoursesManager.storyboard; sourceTree = "<group>"; };
+		089336AD25EC19A900197D78 /* AddCourses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCourses.storyboard; sourceTree = "<group>"; };
+		08C91EAE25E8087700369D0F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		08C91EB325E9894400369D0F /* ListCareers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCareers.storyboard; sourceTree = "<group>"; };
+		08C91EB625E98A2D00369D0F /* FormCareers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormCareers.storyboard; sourceTree = "<group>"; };
+		111C5A7BF97787B2C5EDD0A8 /* Pods-isilAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.release.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		4C16909F87122438CDBC99DF /* Pods-isilAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.debug.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		55ABBA8B25F194BA009C059F /* AddCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoursesViewController.swift; sourceTree = "<group>"; };
+		6C0D1C4125F27FD100433C1D /* ListVenuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVenuesViewController.swift; sourceTree = "<group>"; };
+		6C0D1C4425F2800C00433C1D /* ListVenuesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVenuesViewCell.swift; sourceTree = "<group>"; };
+		6C0D1C4725F2808E00433C1D /* CampusBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusBE.swift; sourceTree = "<group>"; };
+		6C0D1C4E25F29EE400433C1D /* FormVenuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVenuesViewController.swift; sourceTree = "<group>"; };
+		6C0D1C5525F2D7D500433C1D /* ListCareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCareersViewController.swift; sourceTree = "<group>"; };
+		6C0D1C5925F2D7FE00433C1D /* FormCareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCareersViewController.swift; sourceTree = "<group>"; };
+		6C0D1C5C25F2D9DC00433C1D /* CareersBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersBE.swift; sourceTree = "<group>"; };
+		6C0D1C5F25F2DB4E00433C1D /* ListCareersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCareersViewCell.swift; sourceTree = "<group>"; };
+		6C0D1C6625F2F43A00433C1D /* ListCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoursesViewController.swift; sourceTree = "<group>"; };
+		6C0D1C6A25F2F44400433C1D /* FormCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCoursesViewController.swift; sourceTree = "<group>"; };
+		6C0D1C6D25F2F45600433C1D /* CourseBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseBE.swift; sourceTree = "<group>"; };
+		6C0D1C7025F2F46900433C1D /* ListCourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCourseViewCell.swift; sourceTree = "<group>"; };
+		6C0D1C7325F2FA8400433C1D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		6C7A402725EDC8BA001ECC04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C7A404325EDE478001ECC04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2144E1F7CF7D31AAB9F1F7B /* Pods_isilAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isilAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		080D2EA025E473E000EF47BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6815344EC31385CA831AF4B4 /* Pods_isilAdmin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080D2E9A25E473E000EF47BF = {
+			isa = PBXGroup;
+			children = (
+				080D2EA525E473E000EF47BF /* isilAdmin */,
+				080D2EA425E473E000EF47BF /* Products */,
+				C71CB01CC80DB0953870B462 /* Pods */,
+				4C281A660BCCA4060D793C21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		080D2EA425E473E000EF47BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EA325E473E000EF47BF /* isilAdmin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		080D2EA525E473E000EF47BF /* isilAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EBB25E4AF2800EF47BF /* iPhone */,
+				080D2EA625E473E000EF47BF /* AppDelegate.swift */,
+				080D2EA825E473E000EF47BF /* SceneDelegate.swift */,
+				080D2EAC25E473E000EF47BF /* Main.storyboard */,
+				080D2EAF25E473E200EF47BF /* Assets.xcassets */,
+				080D2EB125E473E200EF47BF /* LaunchScreen.storyboard */,
+				080D2EB425E473E200EF47BF /* Info.plist */,
+				6C7A402725EDC8BA001ECC04 /* GoogleService-Info.plist */,
+			);
+			path = isilAdmin;
+			sourceTree = "<group>";
+		};
+		080D2EBB25E4AF2800EF47BF /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				6C7A404225EDE434001ECC04 /* Utils */,
+				080D2EBE25E4AF5100EF47BF /* Classes */,
+				080D2EBD25E4AF4A00EF47BF /* Views */,
+				080D2EBC25E4AF4200EF47BF /* Resources */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		080D2EBC25E4AF4200EF47BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08C91EAE25E8087700369D0F /* Color.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		080D2EBD25E4AF4A00EF47BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				089336A125EB4CD100197D78 /* Enrollment */,
+				0893369A25EB1BCB00197D78 /* Students */,
+				0893369225EABA4300197D78 /* Courses */,
+				0893368B25EAAD2700197D78 /* Locations */,
+				08C91EB125E9878100369D0F /* Carers */,
+				080D2EC425E4B04E00EF47BF /* LoginView.storyboard */,
+				080D2EC725E4B08300EF47BF /* AdminUser.storyboard */,
+				080D2ECA25E4B0A200EF47BF /* Profile.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		080D2EBE25E4AF5100EF47BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EE325E5728F00EF47BF /* Enrollment */,
+				080D2EE225E5728300EF47BF /* Students */,
+				080D2EE125E5727500EF47BF /* Courses */,
+				080D2EE025E5726D00EF47BF /* Locations */,
+				080D2EDF25E5726700EF47BF /* Careers */,
+				080D2EDE25E5725F00EF47BF /* Profile */,
+				080D2EDD25E5725500EF47BF /* AdminUser */,
+				080D2EDC25E5724E00EF47BF /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		080D2EDC25E5724E00EF47BF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EFC25E573D000EF47BF /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		080D2EDD25E5725500EF47BF /* AdminUser */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EF925E573C800EF47BF /* AdminUserViewController.swift */,
+			);
+			path = AdminUser;
+			sourceTree = "<group>";
+		};
+		080D2EDE25E5725F00EF47BF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EF625E573BA00EF47BF /* ProfileViewController.swift */,
+				082F54C525EE984E00364259 /* UpdateProfileViewController.swift */,
+				082F54E225EF1C0E00364259 /* ListStudentsViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		080D2EDF25E5726700EF47BF /* Careers */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C5425F2D7A300433C1D /* Form */,
+				6C0D1C5325F2D79E00433C1D /* List */,
+				080D2EF325E573B000EF47BF /* CareersViewController.swift */,
+			);
+			path = Careers;
+			sourceTree = "<group>";
+		};
+		080D2EE025E5726D00EF47BF /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C4025F27F6A00433C1D /* From */,
+				6C0D1C3F25F27F6000433C1D /* List */,
+				080D2EEF25E573A000EF47BF /* LocationsViewController.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		080D2EE125E5727500EF47BF /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C6525F2F3A000433C1D /* Form */,
+				6C0D1C6425F2F39C00433C1D /* List */,
+				080D2EEB25E5738800EF47BF /* CoursesViewController.swift */,
+				55ABBA8B25F194BA009C059F /* AddCoursesViewController.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		080D2EE225E5728300EF47BF /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				082F550325F0091F00364259 /* Model */,
+				082F550C25F0314600364259 /* UpdateStudentViewController.swift */,
+				080D2EE825E5737B00EF47BF /* StudentsViewController.swift */,
+				082F54DF25EF03D000364259 /* AddStudentViewController.swift */,
+				082F54E925EFCF7500364259 /* ListStudentViewController.swift */,
+				082F550725F0210900364259 /* MyCustomTableViewCell.swift */,
+				082F550825F0210A00364259 /* MyCustomTableViewCell.xib */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		080D2EE325E5728F00EF47BF /* Enrollment */ = {
+			isa = PBXGroup;
+			children = (
+				080D2EE425E5736C00EF47BF /* EnrollmentViewController.swift */,
+			);
+			path = Enrollment;
+			sourceTree = "<group>";
+		};
+		082F550325F0091F00364259 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				082F550425F0093900364259 /* Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0893368B25EAAD2700197D78 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				080D2ED025E4B0D800EF47BF /* Locations.storyboard */,
+				0893368C25EAAD5D00197D78 /* ListaLocations.storyboard */,
+				0893368F25EAAD6900197D78 /* FormVenues.storyboard */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		0893369225EABA4300197D78 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				080D2ED325E4B0FE00EF47BF /* Courses.storyboard */,
+				0893369425EABF3300197D78 /* ListCourses.storyboard */,
+				0893369725EAD97100197D78 /* AddCourse.storyboard */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		0893369A25EB1BCB00197D78 /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				080D2ED625E4B11C00EF47BF /* Students.storyboard */,
+				0893369B25EB1CB100197D78 /* ListStudents.storyboard */,
+				0893369E25EB1CEE00197D78 /* AddStudents.storyboard */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		089336A125EB4CD100197D78 /* Enrollment */ = {
+			isa = PBXGroup;
+			children = (
+				089336A925EC197500197D78 /* ManageCourses */,
+				080D2ED925E4B13200EF47BF /* Enrollment.storyboard */,
+				089336A325EC0A2900197D78 /* EnableEnrollment.storyboard */,
+			);
+			path = Enrollment;
+			sourceTree = "<group>";
+		};
+		089336A925EC197500197D78 /* ManageCourses */ = {
+			isa = PBXGroup;
+			children = (
+				089336A625EC105B00197D78 /* ManageCourses.storyboard */,
+				089336AA25EC198C00197D78 /* ListCoursesManager.storyboard */,
+				089336AD25EC19A900197D78 /* AddCourses.storyboard */,
+			);
+			path = ManageCourses;
+			sourceTree = "<group>";
+		};
+		08C91EB125E9878100369D0F /* Carers */ = {
+			isa = PBXGroup;
+			children = (
+				080D2ECD25E4B0C700EF47BF /* Careers.storyboard */,
+				08C91EB325E9894400369D0F /* ListCareers.storyboard */,
+				08C91EB625E98A2D00369D0F /* FormCareers.storyboard */,
+			);
+			path = Carers;
+			sourceTree = "<group>";
+		};
+		4C281A660BCCA4060D793C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2144E1F7CF7D31AAB9F1F7B /* Pods_isilAdmin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C0D1C3F25F27F6000433C1D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C4125F27FD100433C1D /* ListVenuesViewController.swift */,
+				6C0D1C4425F2800C00433C1D /* ListVenuesViewCell.swift */,
+				6C0D1C4725F2808E00433C1D /* CampusBE.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6C0D1C4025F27F6A00433C1D /* From */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C4E25F29EE400433C1D /* FormVenuesViewController.swift */,
+			);
+			path = From;
+			sourceTree = "<group>";
+		};
+		6C0D1C5325F2D79E00433C1D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C5525F2D7D500433C1D /* ListCareersViewController.swift */,
+				6C0D1C5C25F2D9DC00433C1D /* CareersBE.swift */,
+				6C0D1C5F25F2DB4E00433C1D /* ListCareersViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6C0D1C5425F2D7A300433C1D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C5925F2D7FE00433C1D /* FormCareersViewController.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		6C0D1C6425F2F39C00433C1D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C6625F2F43A00433C1D /* ListCoursesViewController.swift */,
+				6C0D1C6D25F2F45600433C1D /* CourseBE.swift */,
+				6C0D1C7025F2F46900433C1D /* ListCourseViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6C0D1C6525F2F3A000433C1D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D1C6A25F2F44400433C1D /* FormCoursesViewController.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		6C7A404225EDE434001ECC04 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6C7A404325EDE478001ECC04 /* ViewController.swift */,
+				6C0D1C7325F2FA8400433C1D /* ImageView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C71CB01CC80DB0953870B462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C16909F87122438CDBC99DF /* Pods-isilAdmin.debug.xcconfig */,
+				111C5A7BF97787B2C5EDD0A8 /* Pods-isilAdmin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		080D2EA225E473E000EF47BF /* isilAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080D2EB725E473E200EF47BF /* Build configuration list for PBXNativeTarget "isilAdmin" */;
+			buildPhases = (
+				2506FEDDCEE55A62011B2033 /* [CP] Check Pods Manifest.lock */,
+				080D2E9F25E473E000EF47BF /* Sources */,
+				080D2EA025E473E000EF47BF /* Frameworks */,
+				080D2EA125E473E000EF47BF /* Resources */,
+				404B26FE671CB34B4AF64EC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = isilAdmin;
+			productName = isilAdmin;
+			productReference = 080D2EA325E473E000EF47BF /* isilAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		080D2E9B25E473E000EF47BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					080D2EA225E473E000EF47BF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 080D2E9E25E473E000EF47BF /* Build configuration list for PBXProject "isilAdmin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 080D2E9A25E473E000EF47BF;
+			productRefGroup = 080D2EA425E473E000EF47BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				080D2EA225E473E000EF47BF /* isilAdmin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		080D2EA125E473E000EF47BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080D2ECB25E4B0A200EF47BF /* Profile.storyboard in Resources */,
+				089336A425EC0A2900197D78 /* EnableEnrollment.storyboard in Resources */,
+				6C7A402825EDC8BA001ECC04 /* GoogleService-Info.plist in Resources */,
+				080D2EB325E473E200EF47BF /* LaunchScreen.storyboard in Resources */,
+				08C91EB725E98A2D00369D0F /* FormCareers.storyboard in Resources */,
+				0893369025EAAD6900197D78 /* FormVenues.storyboard in Resources */,
+				0893369F25EB1CEE00197D78 /* AddStudents.storyboard in Resources */,
+				080D2EC825E4B08300EF47BF /* AdminUser.storyboard in Resources */,
+				080D2ECE25E4B0C700EF47BF /* Careers.storyboard in Resources */,
+				0893368D25EAAD5D00197D78 /* ListaLocations.storyboard in Resources */,
+				089336AE25EC19A900197D78 /* AddCourses.storyboard in Resources */,
+				089336AB25EC198C00197D78 /* ListCoursesManager.storyboard in Resources */,
+				082F550A25F0210A00364259 /* MyCustomTableViewCell.xib in Resources */,
+				080D2EC525E4B04E00EF47BF /* LoginView.storyboard in Resources */,
+				0893369C25EB1CB100197D78 /* ListStudents.storyboard in Resources */,
+				089336A725EC105B00197D78 /* ManageCourses.storyboard in Resources */,
+				08C91EAF25E8087700369D0F /* Color.xcassets in Resources */,
+				080D2EB025E473E200EF47BF /* Assets.xcassets in Resources */,
+				080D2ED725E4B11C00EF47BF /* Students.storyboard in Resources */,
+				08C91EB425E9894400369D0F /* ListCareers.storyboard in Resources */,
+				080D2ED425E4B0FE00EF47BF /* Courses.storyboard in Resources */,
+				0893369825EAD97100197D78 /* AddCourse.storyboard in Resources */,
+				080D2EDA25E4B13200EF47BF /* Enrollment.storyboard in Resources */,
+				080D2EAE25E473E000EF47BF /* Main.storyboard in Resources */,
+				0893369525EABF3300197D78 /* ListCourses.storyboard in Resources */,
+				080D2ED125E4B0D800EF47BF /* Locations.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2506FEDDCEE55A62011B2033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-isilAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		404B26FE671CB34B4AF64EC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-isilAdmin/Pods-isilAdmin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-isilAdmin/Pods-isilAdmin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-isilAdmin/Pods-isilAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		080D2E9F25E473E000EF47BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080D2EF025E573A000EF47BF /* LocationsViewController.swift in Sources */,
+				080D2EE525E5736C00EF47BF /* EnrollmentViewController.swift in Sources */,
+				6C0D1C5A25F2D7FE00433C1D /* FormCareersViewController.swift in Sources */,
+				6C0D1C5625F2D7D500433C1D /* ListCareersViewController.swift in Sources */,
+				082F54E325EF1C0E00364259 /* ListStudentsViewController.swift in Sources */,
+				080D2EF425E573B000EF47BF /* CareersViewController.swift in Sources */,
+				080D2EFA25E573C800EF47BF /* AdminUserViewController.swift in Sources */,
+				080D2EA725E473E000EF47BF /* AppDelegate.swift in Sources */,
+				6C0D1C7425F2FA8400433C1D /* ImageView.swift in Sources */,
+				6C0D1C5D25F2D9DC00433C1D /* CareersBE.swift in Sources */,
+				080D2EE925E5737B00EF47BF /* StudentsViewController.swift in Sources */,
+				082F54EA25EFCF7500364259 /* ListStudentViewController.swift in Sources */,
+				080D2EF725E573BA00EF47BF /* ProfileViewController.swift in Sources */,
+				082F550D25F0314600364259 /* UpdateStudentViewController.swift in Sources */,
+				6C0D1C6B25F2F44400433C1D /* FormCoursesViewController.swift in Sources */,
+				6C0D1C4225F27FD100433C1D /* ListVenuesViewController.swift in Sources */,
+				080D2EA925E473E000EF47BF /* SceneDelegate.swift in Sources */,
+				080D2EEC25E5738800EF47BF /* CoursesViewController.swift in Sources */,
+				6C0D1C4825F2808E00433C1D /* CampusBE.swift in Sources */,
+				6C0D1C6725F2F43A00433C1D /* ListCoursesViewController.swift in Sources */,
+				6C0D1C6E25F2F45600433C1D /* CourseBE.swift in Sources */,
+				082F550925F0210A00364259 /* MyCustomTableViewCell.swift in Sources */,
+				6C0D1C4525F2800C00433C1D /* ListVenuesViewCell.swift in Sources */,
+				082F54C625EE984E00364259 /* UpdateProfileViewController.swift in Sources */,
+				6C7A404425EDE478001ECC04 /* ViewController.swift in Sources */,
+				080D2EFD25E573D000EF47BF /* LoginViewController.swift in Sources */,
+				6C0D1C7125F2F46900433C1D /* ListCourseViewCell.swift in Sources */,
+				55ABBA8C25F194BA009C059F /* AddCoursesViewController.swift in Sources */,
+				6C0D1C6025F2DB4E00433C1D /* ListCareersViewCell.swift in Sources */,
+				6C0D1C4F25F29EE400433C1D /* FormVenuesViewController.swift in Sources */,
+				082F54E025EF03D000364259 /* AddStudentViewController.swift in Sources */,
+				082F550525F0093900364259 /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		080D2EAC25E473E000EF47BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				080D2EAD25E473E000EF47BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		080D2EB125E473E200EF47BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				080D2EB225E473E200EF47BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		080D2EB525E473E200EF47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		080D2EB625E473E200EF47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		080D2EB825E473E200EF47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C16909F87122438CDBC99DF /* Pods-isilAdmin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A98P8GT6LW;
+				INFOPLIST_FILE = isilAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kerwin.isilAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		080D2EB925E473E200EF47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111C5A7BF97787B2C5EDD0A8 /* Pods-isilAdmin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A98P8GT6LW;
+				INFOPLIST_FILE = isilAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kerwin.isilAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		080D2E9E25E473E000EF47BF /* Build configuration list for PBXProject "isilAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080D2EB525E473E200EF47BF /* Debug */,
+				080D2EB625E473E200EF47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		080D2EB725E473E200EF47BF /* Build configuration list for PBXNativeTarget "isilAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080D2EB825E473E200EF47BF /* Debug */,
+				080D2EB925E473E200EF47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 080D2E9B25E473E000EF47BF /* Project object */;
+}

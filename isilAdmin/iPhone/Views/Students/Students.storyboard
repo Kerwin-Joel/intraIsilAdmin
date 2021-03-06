@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PBk-Df-fAf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Students View Controller-->
+        <scene sceneID="40W-b4-dsM">
+            <objects>
+                <viewController id="PBk-Df-fAf" customClass="StudentsViewController" customModule="isilAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJ4-Uq-gZH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRn-4z-euK">
+                                <rect key="frame" x="0.0" y="806.5" width="414" height="89.5"/>
+                                <color key="backgroundColor" name="Main"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PANEL DE ADMINISTRACION DE ALUMNOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgd-8K-IdL">
+                                <rect key="frame" x="30" y="144" width="354" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gfk-VB-r1h">
+                                <rect key="frame" x="20" y="284" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="aLH-am-iAf"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Consultar alumnos
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="( Ver listado de carreras )">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="du9-8N-PBx" kind="show" id="zrb-in-c9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-gF-M3v">
+                                <rect key="frame" x="20" y="394" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Agregar alumnos
+( Agregar nuevas carreras )</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="addStudent:" destination="PBk-Df-fAf" eventType="touchUpInside" id="4ip-pd-xS6"/>
+                                    <segue destination="sX6-L7-Jf9" kind="show" id="oMZ-TZ-9fQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2kb-Vf-XTt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2kb-Vf-XTt" firstAttribute="trailing" secondItem="Lgd-8K-IdL" secondAttribute="trailing" constant="30" id="3ie-JO-0va"/>
+                            <constraint firstAttribute="bottom" secondItem="HRn-4z-euK" secondAttribute="bottom" id="Bxc-4I-YfR"/>
+                            <constraint firstItem="HRn-4z-euK" firstAttribute="height" secondItem="cJ4-Uq-gZH" secondAttribute="height" multiplier="0.0998884" id="Fu3-8b-661"/>
+                            <constraint firstItem="HRn-4z-euK" firstAttribute="trailing" secondItem="2kb-Vf-XTt" secondAttribute="trailing" id="GWB-TM-tSP"/>
+                            <constraint firstItem="bjV-gF-M3v" firstAttribute="top" secondItem="gfk-VB-r1h" secondAttribute="bottom" constant="30" id="I6a-eH-HF4"/>
+                            <constraint firstItem="gfk-VB-r1h" firstAttribute="leading" secondItem="bjV-gF-M3v" secondAttribute="leading" id="Ide-oB-bAE"/>
+                            <constraint firstItem="gfk-VB-r1h" firstAttribute="trailing" secondItem="bjV-gF-M3v" secondAttribute="trailing" id="aDa-1k-6MY"/>
+                            <constraint firstItem="gfk-VB-r1h" firstAttribute="top" secondItem="Lgd-8K-IdL" secondAttribute="bottom" constant="80" id="pP1-mS-EMz"/>
+                            <constraint firstItem="gfk-VB-r1h" firstAttribute="leading" secondItem="2kb-Vf-XTt" secondAttribute="leading" constant="20" id="vMd-SQ-hXr"/>
+                            <constraint firstItem="2kb-Vf-XTt" firstAttribute="trailing" secondItem="gfk-VB-r1h" secondAttribute="trailing" constant="20" id="vgb-oy-BUf"/>
+                            <constraint firstItem="HRn-4z-euK" firstAttribute="leading" secondItem="2kb-Vf-XTt" secondAttribute="leading" id="wAO-Hd-MJn"/>
+                            <constraint firstItem="Lgd-8K-IdL" firstAttribute="top" secondItem="2kb-Vf-XTt" secondAttribute="top" constant="100" id="wtH-Tr-f2Q"/>
+                            <constraint firstItem="Lgd-8K-IdL" firstAttribute="leading" secondItem="2kb-Vf-XTt" secondAttribute="leading" constant="30" id="yIt-gF-lk3"/>
+                            <constraint firstItem="gfk-VB-r1h" firstAttribute="height" secondItem="bjV-gF-M3v" secondAttribute="height" id="zkj-rZ-nSv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u0t-YT-cQh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIk-JP-bhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="20.758928571428569"/>
+        </scene>
+        <!--ListStudents-->
+        <scene sceneID="JYZ-hE-Yc6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListStudents" id="du9-8N-PBx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VAa-8A-99S"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YA-tf-M5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="-104"/>
+        </scene>
+        <!--AddStudents-->
+        <scene sceneID="GVb-au-2os">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddStudents" id="sX6-L7-Jf9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="brG-It-ctc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5S-Ki-1cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.0" green="0.68235294117647061" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

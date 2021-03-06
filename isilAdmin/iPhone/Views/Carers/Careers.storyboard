@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UuV-o4-Zy3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Careers View Controller-->
+        <scene sceneID="c6k-c0-fOI">
+            <objects>
+                <viewController id="UuV-o4-Zy3" customClass="CareersViewController" customModule="isilAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3m-6D-01w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMI-mw-wzd">
+                                <rect key="frame" x="30" y="74" width="354" height="72"/>
+                                <string key="text">Panel de administración
+ de carreras</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpp-JN-bvt">
+                                <rect key="frame" x="30" y="196" width="354" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.1321154447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Z96-Wi-EIx"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Consultar carreras
+( Ver listado de carreras )</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="showListCareers:" destination="UuV-o4-Zy3" eventType="touchUpInside" id="Yat-te-Bn1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STe-s2-qsu">
+                                <rect key="frame" x="30" y="306" width="354" height="80"/>
+                                <color key="backgroundColor" red="0.50527825469999998" green="0.96181537500000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Agregar carreras
+( Agregar nuevas carreras )</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="showFormCareers:" destination="UuV-o4-Zy3" eventType="touchUpInside" id="TtS-lz-E38"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovS-V4-G4u">
+                                <rect key="frame" x="0.0" y="806.5" width="414" height="89.5"/>
+                                <color key="backgroundColor" name="Main"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SGJ-hn-vkq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ovS-V4-G4u" firstAttribute="leading" secondItem="SGJ-hn-vkq" secondAttribute="leading" id="3og-KL-Nrt"/>
+                            <constraint firstItem="SGJ-hn-vkq" firstAttribute="trailing" secondItem="dpp-JN-bvt" secondAttribute="trailing" constant="30" id="HCb-Iz-ZBQ"/>
+                            <constraint firstItem="SGJ-hn-vkq" firstAttribute="trailing" secondItem="jMI-mw-wzd" secondAttribute="trailing" constant="30" id="InG-sO-Sb4"/>
+                            <constraint firstItem="STe-s2-qsu" firstAttribute="top" secondItem="dpp-JN-bvt" secondAttribute="bottom" constant="30" id="OhX-NM-hEb"/>
+                            <constraint firstItem="dpp-JN-bvt" firstAttribute="trailing" secondItem="STe-s2-qsu" secondAttribute="trailing" id="SWc-ZG-mTw"/>
+                            <constraint firstItem="jMI-mw-wzd" firstAttribute="top" secondItem="SGJ-hn-vkq" secondAttribute="top" constant="30" id="Snb-Cw-g2d"/>
+                            <constraint firstItem="dpp-JN-bvt" firstAttribute="height" secondItem="STe-s2-qsu" secondAttribute="height" id="Zjc-Ip-SK4"/>
+                            <constraint firstItem="ovS-V4-G4u" firstAttribute="height" secondItem="v3m-6D-01w" secondAttribute="height" multiplier="0.0998884" id="a77-tg-fcf"/>
+                            <constraint firstAttribute="bottom" secondItem="ovS-V4-G4u" secondAttribute="bottom" id="bYI-oB-4Jk"/>
+                            <constraint firstItem="dpp-JN-bvt" firstAttribute="top" secondItem="jMI-mw-wzd" secondAttribute="bottom" constant="50" id="dHv-Yt-N3K"/>
+                            <constraint firstItem="ovS-V4-G4u" firstAttribute="trailing" secondItem="SGJ-hn-vkq" secondAttribute="trailing" id="e4z-0G-sHE"/>
+                            <constraint firstItem="dpp-JN-bvt" firstAttribute="leading" secondItem="STe-s2-qsu" secondAttribute="leading" id="j1K-cQ-TqV"/>
+                            <constraint firstItem="jMI-mw-wzd" firstAttribute="leading" secondItem="SGJ-hn-vkq" secondAttribute="leading" constant="30" id="n44-H1-tbT"/>
+                            <constraint firstItem="dpp-JN-bvt" firstAttribute="leading" secondItem="SGJ-hn-vkq" secondAttribute="leading" constant="30" id="qyC-kN-BYR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X3s-PY-jXP"/>
+                    <connections>
+                        <segue destination="xXg-kN-aSG" kind="show" identifier="FormCareersViewController" id="3Im-n4-Jbv"/>
+                        <segue destination="zQC-ao-8pQ" kind="show" identifier="ListCareersViewController" id="8xz-8J-gP2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1G-0U-lv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="18.75"/>
+        </scene>
+        <!--ListCareers-->
+        <scene sceneID="8Gi-nA-I9C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListCareers" id="zQC-ao-8pQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fxz-s7-i8j"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7M-gV-Qdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-123"/>
+        </scene>
+        <!--FormCareers-->
+        <scene sceneID="KRH-1h-eEN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FormCareers" id="xXg-kN-aSG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IgS-Qa-CPQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNe-dP-eF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.0" green="0.68235294117647061" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
