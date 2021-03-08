@@ -12,12 +12,8 @@ import Firebase
 class ListCoursesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
     var arrayCourses = [CourseBE]()
     var obj: CourseBE!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +23,11 @@ class ListCoursesViewController: UIViewController {
         
         self.cargarTabla()
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nuevo", style: .done, target: self, action: #selector(self.showForm))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nuevo", style: .done, target: self, action: #selector(self.goAdd))
     }
     
-    @objc func showForm(sender: AnyObject) {
-        self.obj = nil
-        
+    @objc func goAdd(sender: AnyObject) {
+        self.performSegue(withIdentifier: "AddCourseViewController", sender: nil)
     }
     
     func cargarTabla(){
@@ -44,7 +39,13 @@ class ListCoursesViewController: UIViewController {
                 for data in snapshot.children.allObjects as! [DataSnapshot] {
                     
                     let json = data.value as! [String: Any]
-                    let course = CourseBE(id: data.key, name: json["nombre"] as! String, teacher: json["profesor"] as! String, urlImage: json["urlImage"] as! String, date: json["fecha"] as! String)
+                    let course = CourseBE(id: data.key,
+                                          name: json["nombre"] as! String,
+                                          teacher: json["profesor"] as! String,
+                                          urlImage: json["urlImage"] as! String,
+                                          date: json["fecha"] as! String,
+                                          code: json["codigo"] as! String,
+                                          career: json["carrera"] as! String)
 
                     self.arrayCourses.append(course)
                  
@@ -65,12 +66,12 @@ extension ListCoursesViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.obj = self.arrayCourses[indexPath.row]
-        // show
+        self.performSegue(withIdentifier: "FormCoursesViewController", sender: self.obj)
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let cell = tableView.cellForRow(at: indexPath) as? ListCareersViewCell
+        let cell = tableView.cellForRow(at: indexPath) as? ListCourseViewCell
         return cell?.swipeActions
     }
 }
@@ -102,9 +103,16 @@ extension ListCoursesViewController: ListCourseViewCellDelegate{
         
     }
 
+    func ListCourseViewCell(_ cell:ListCourseViewCell, horario obj: CourseBE) {
+        guard let indexPath = self.tableView.indexPath(for: cell) else { return }
+        self.obj = self.arrayCourses[indexPath.row]
+        self.performSegue(withIdentifier: "AddScheduleViewController", sender: self.obj)
+    }
+    
     func ListCourseViewCell(_ cell: ListCourseViewCell, edit obj: CourseBE) {
         guard let indexPath = self.tableView.indexPath(for: cell) else { return }
         self.obj = self.arrayCourses[indexPath.row]
+        self.performSegue(withIdentifier: "FormCoursesViewController", sender: self.obj)
     }
     
     
@@ -127,6 +135,20 @@ extension ListCoursesViewController: UITableViewDataSource{
         cell.obj = self.arrayCourses[indexPath.row]
         
         return cell
+    }
+}
+
+extension ListCoursesViewController{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FormCoursesViewController" {
+            if let destino = segue.destination as? FormCoursesViewController{
+                destino.obj = self.obj
+            }
+        } else if segue.identifier == "AddScheduleViewController" {
+            if let destino = segue.destination as? AddScheduleViewController{
+                destino.obj = self.obj
+            }
+        }
     }
 }
 

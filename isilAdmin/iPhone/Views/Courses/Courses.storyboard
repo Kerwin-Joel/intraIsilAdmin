@@ -73,7 +73,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="showForm:" destination="rbh-sB-YO7" eventType="touchUpInside" id="g9s-UN-9vr"/>
+                                    <action selector="showAdd:" destination="rbh-sB-YO7" eventType="touchUpInside" id="q8Z-vC-aSY"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHL-af-cUV">
@@ -103,7 +103,7 @@
                     <navigationItem key="navigationItem" id="Pmi-Bf-jSD"/>
                     <connections>
                         <segue destination="Tai-Id-EBh" kind="show" identifier="ListCoursesViewController" id="jBI-7y-qJ3"/>
-                        <segue destination="bmN-eS-wcm" kind="show" identifier="FormCoursesViewController" id="Hip-9T-Kd3"/>
+                        <segue destination="bmN-eS-wcm" kind="show" identifier="AddCoursesViewController" id="TzW-bz-BMO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wD-1a-ueN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -118,7 +118,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xib-Qd-QcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="-29"/>
+            <point key="canvasLocation" x="851" y="-35"/>
         </scene>
         <!--AddCourse-->
         <scene sceneID="caE-Xd-jaf">

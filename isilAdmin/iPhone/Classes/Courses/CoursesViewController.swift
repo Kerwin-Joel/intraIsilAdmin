@@ -20,9 +20,8 @@ class CoursesViewController: UIViewController {
     }
     
     
-    @IBAction func showForm(_ sender: Any) {
-        self.performSegue(withIdentifier: "FormCoursesViewController", sender: self)
+    @IBAction func showAdd(_ sender: Any) {
+        self.performSegue(withIdentifier:
+                            "AddCoursesViewController", sender:self)
     }
-    
-
 }

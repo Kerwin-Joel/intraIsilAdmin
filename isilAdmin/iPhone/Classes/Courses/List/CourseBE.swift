@@ -15,12 +15,16 @@ class CourseBE{
     var teacher: String
     var urlImage: String
     var date: String
+    var career: String
+    var code: String
     
-    init(id: String, name: String, teacher: String, urlImage: String, date: String) {
+    init(id: String, name: String, teacher: String, urlImage: String, date: String, code:String, career:String) {
         self.id = id
         self.name = name
         self.teacher = teacher
         self.urlImage = urlImage
         self.date = date
+        self.career = career
+        self.code = code
     }
 }

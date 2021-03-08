@@ -9,18 +9,19 @@ import UIKit
 
 protocol ListCourseViewCellDelegate {
     func ListCourseViewCell(_ cell: ListCourseViewCell, delete obj: CourseBE)
+    func ListCourseViewCell(_ cell: ListCourseViewCell, horario obj: CourseBE)
     func ListCourseViewCell(_ cell: ListCourseViewCell, edit obj: CourseBE)
 }
 
 class ListCourseViewCell: UITableViewCell{
 
 
-
     @IBOutlet weak var imageCourse: UIImageView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var code: UILabel!
+    @IBOutlet weak var career: UILabel!
     @IBOutlet weak var teacher: UILabel!
     @IBOutlet weak var date: UILabel!
-    
     
     var delegate: ListCourseViewCellDelegate?
     
@@ -32,6 +33,8 @@ class ListCourseViewCell: UITableViewCell{
     
     private func updateData(){
         self.name.text = self.obj.name
+        self.code.text = self.obj.code
+        self.career.text = self.obj.career
         self.teacher.text = self.obj.teacher
         self.date.text = self.obj.date
         
@@ -52,7 +55,7 @@ class ListCourseViewCell: UITableViewCell{
 extension ListCourseViewCell{
     
     public var swipeActions: UISwipeActionsConfiguration {
-        return UISwipeActionsConfiguration(actions: [self.createDeleteAction(), self.createEditAction()])
+        return UISwipeActionsConfiguration(actions: [self.createDeleteAction(), self.createHorarioAction(), self.createEditAction()])
     }
     
     private func createDeleteAction() -> UIContextualAction {
@@ -62,6 +65,15 @@ extension ListCourseViewCell{
         }
 
         action.image = UIImage(systemName: "trash")
+        return action
+    }
+    
+    private func createHorarioAction() -> UIContextualAction{
+        let action = UIContextualAction(style: .normal, title: "Horario") {(_, _,_) in
+            self.delegate?.ListCourseViewCell(self, horario: self.obj)
+        }
+        action.backgroundColor = .systemGreen
+        action.image = UIImage(systemName: "calendar")
         return action
     }
     
