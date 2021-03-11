@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" name="Main"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg6-0V-ZDV">
-                                <rect key="frame" x="107" y="484" width="200" height="40"/>
+                                <rect key="frame" x="107" y="444" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="5Rj-kn-Zgu"/>
@@ -84,7 +84,7 @@
                             <constraint firstItem="2NK-83-bWb" firstAttribute="leading" secondItem="5Yp-Ip-nlD" secondAttribute="leading" id="bpf-cw-irQ"/>
                             <constraint firstItem="Ifb-CY-F8I" firstAttribute="leading" secondItem="m46-h3-guI" secondAttribute="leading" constant="20" id="cAN-w2-Ite"/>
                             <constraint firstAttribute="bottom" secondItem="sew-qH-3p4" secondAttribute="bottom" id="mCx-9A-9dB"/>
-                            <constraint firstItem="Jg6-0V-ZDV" firstAttribute="top" secondItem="5Yp-Ip-nlD" secondAttribute="bottom" constant="100" id="nH3-ei-EAR"/>
+                            <constraint firstItem="Jg6-0V-ZDV" firstAttribute="top" secondItem="5Yp-Ip-nlD" secondAttribute="bottom" constant="60" id="nH3-ei-EAR"/>
                             <constraint firstItem="2NK-83-bWb" firstAttribute="leading" secondItem="snn-c3-j1u" secondAttribute="leading" id="qcQ-qa-CdF"/>
                             <constraint firstItem="Ifb-CY-F8I" firstAttribute="top" secondItem="m46-h3-guI" secondAttribute="top" constant="40" id="t8O-Fy-el8"/>
                             <constraint firstItem="Jg6-0V-ZDV" firstAttribute="centerX" secondItem="gI7-g9-Z3a" secondAttribute="centerX" id="vmd-SX-bKR"/>

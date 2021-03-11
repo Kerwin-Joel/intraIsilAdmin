@@ -49,6 +49,7 @@
 		08C91EAF25E8087700369D0F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EAE25E8087700369D0F /* Color.xcassets */; };
 		08C91EB425E9894400369D0F /* ListCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB325E9894400369D0F /* ListCareers.storyboard */; };
 		08C91EB725E98A2D00369D0F /* FormCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB625E98A2D00369D0F /* FormCareers.storyboard */; };
+		4ED36CBC25F9CBB60021663F /* AddCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED36CBB25F9CBB60021663F /* AddCoursesViewController.swift */; };
 		551447F625F647D500F62585 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551447F525F647D500F62585 /* AddScheduleViewController.swift */; };
 		551447FD25F64C1900F62585 /* AddSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551447FC25F64C1800F62585 /* AddSchedule.storyboard */; };
 		55ABBA8C25F194BA009C059F /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBA8B25F194BA009C059F /* AddCourseViewController.swift */; };
@@ -117,6 +118,7 @@
 		08C91EB625E98A2D00369D0F /* FormCareers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormCareers.storyboard; sourceTree = "<group>"; };
 		111C5A7BF97787B2C5EDD0A8 /* Pods-isilAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.release.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		4C16909F87122438CDBC99DF /* Pods-isilAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.debug.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED36CBB25F9CBB60021663F /* AddCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoursesViewController.swift; sourceTree = "<group>"; };
 		551447F525F647D500F62585 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		551447FC25F64C1800F62585 /* AddSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSchedule.storyboard; sourceTree = "<group>"; };
 		55ABBA8B25F194BA009C059F /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				080D2EE425E5736C00EF47BF /* EnrollmentViewController.swift */,
+				4ED36CBB25F9CBB60021663F /* AddCoursesViewController.swift */,
 			);
 			path = Enrollment;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				080D2EA925E473E000EF47BF /* SceneDelegate.swift in Sources */,
 				080D2EEC25E5738800EF47BF /* CoursesViewController.swift in Sources */,
 				6C0D1C4825F2808E00433C1D /* CampusBE.swift in Sources */,
+				4ED36CBC25F9CBB60021663F /* AddCoursesViewController.swift in Sources */,
 				6C0D1C6725F2F43A00433C1D /* ListCoursesViewController.swift in Sources */,
 				6C0D1C6E25F2F45600433C1D /* CourseBE.swift in Sources */,
 				082F550925F0210A00364259 /* MyCustomTableViewCell.swift in Sources */,

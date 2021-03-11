@@ -1,4 +1,4 @@
-//
+	//
 //  LocationsViewController.swift
 //  isilAdmin
 //
@@ -25,3 +25,14 @@ class LocationsViewController: UIViewController {
     
 
 }
+    
+    @IBDesignable extension UIButton{
+        @IBInspectable var cornerRadius: CGFloat{
+            set{
+                layer.cornerRadius = newValue
+            }
+            get{
+                return layer.cornerRadius
+            }
+        }
+    }
