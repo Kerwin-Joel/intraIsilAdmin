@@ -49,6 +49,7 @@
 		08C91EAF25E8087700369D0F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EAE25E8087700369D0F /* Color.xcassets */; };
 		08C91EB425E9894400369D0F /* ListCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB325E9894400369D0F /* ListCareers.storyboard */; };
 		08C91EB725E98A2D00369D0F /* FormCareers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C91EB625E98A2D00369D0F /* FormCareers.storyboard */; };
+		4E689A7425FB06BE0011B399 /* EnrollmentAccept.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E689A7325FB06BE0011B399 /* EnrollmentAccept.storyboard */; };
 		4ED36CBC25F9CBB60021663F /* AddCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED36CBB25F9CBB60021663F /* AddCoursesViewController.swift */; };
 		551447F625F647D500F62585 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551447F525F647D500F62585 /* AddScheduleViewController.swift */; };
 		551447FD25F64C1900F62585 /* AddSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551447FC25F64C1800F62585 /* AddSchedule.storyboard */; };
@@ -118,6 +119,7 @@
 		08C91EB625E98A2D00369D0F /* FormCareers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormCareers.storyboard; sourceTree = "<group>"; };
 		111C5A7BF97787B2C5EDD0A8 /* Pods-isilAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.release.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		4C16909F87122438CDBC99DF /* Pods-isilAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isilAdmin.debug.xcconfig"; path = "Target Support Files/Pods-isilAdmin/Pods-isilAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		4E689A7325FB06BE0011B399 /* EnrollmentAccept.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollmentAccept.storyboard; sourceTree = "<group>"; };
 		4ED36CBB25F9CBB60021663F /* AddCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoursesViewController.swift; sourceTree = "<group>"; };
 		551447F525F647D500F62585 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		551447FC25F64C1800F62585 /* AddSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSchedule.storyboard; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 			children = (
 				089336A925EC197500197D78 /* ManageCourses */,
 				080D2ED925E4B13200EF47BF /* Enrollment.storyboard */,
+				4E689A7325FB06BE0011B399 /* EnrollmentAccept.storyboard */,
 				089336A325EC0A2900197D78 /* EnableEnrollment.storyboard */,
 			);
 			path = Enrollment;
@@ -542,6 +545,7 @@
 				08C91EAF25E8087700369D0F /* Color.xcassets in Resources */,
 				080D2EB025E473E200EF47BF /* Assets.xcassets in Resources */,
 				551447FD25F64C1900F62585 /* AddSchedule.storyboard in Resources */,
+				4E689A7425FB06BE0011B399 /* EnrollmentAccept.storyboard in Resources */,
 				080D2ED725E4B11C00EF47BF /* Students.storyboard in Resources */,
 				08C91EB425E9894400369D0F /* ListCareers.storyboard in Resources */,
 				080D2ED425E4B0FE00EF47BF /* Courses.storyboard in Resources */,

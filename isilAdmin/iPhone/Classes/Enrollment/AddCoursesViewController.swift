@@ -9,6 +9,9 @@ import UIKit
 
 class AddCoursesViewController: UIViewController{
     
+    @IBOutlet weak var ConstraintBottom: NSLayoutConstraint!
+    
+    @IBOutlet weak var ConstraintCentreYViewContent: NSLayoutConstraint!
     @IBAction func clickBtnCloseKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -18,25 +21,33 @@ class AddCoursesViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     
+    // Codigo para añadir y remover el observador del teclado
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keywordWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keywordWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self)
-        
     }
     
-    @objc func keywordWillShow(_ notification: Notification){
-        let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
-        let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double ?? 0
+    @objc func keyboardWillShow(_ notification: Notification){
+        let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as?CGRect ?? .zero
+        let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as?Double ?? 0
+        
+        UIView.animate(withDuration: animationDuration){
+            self.ConstraintBottom.constant = keyboardFrame.size.height - 90 //90 el tamaño del ultimo view
+            self.view.layoutIfNeeded()
+        }
     }
     
-    @objc func keywordWillHide(_ notification: Notification){
-        
+    @objc func keyboardWillHide(_ notificacion: Notification){
+        let animationDuration = notificacion.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as?Double ?? 0
+        UIView.animate(withDuration: animationDuration){
+            self.ConstraintBottom.constant = 0
+            self.view.layoutIfNeeded()
+        }
     }
 }

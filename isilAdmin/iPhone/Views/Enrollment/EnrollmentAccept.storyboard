@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="i8X-zq-3Nh">
+            <objects>
+                <viewController id="bNn-2u-xqR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08r-M7-QlF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acepta las condiciones de Matricula?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AU-6I-VOI">
+                                <rect key="frame" x="20" y="144" width="374" height="50"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-ZA-NHW">
+                                <rect key="frame" x="20" y="294" width="374" height="345"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a est rutrum, tempus magna a, interdum mauris. Cras et porttitor odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam nunc nibh, viverra at lorem nec, volutpat placerat dolor. Nam vel arcu nec nibh varius posuere sit amet sed magna. Morbi ornare neque vitae arcu tempor maximus. Ut at accumsan odio, id viverra est. In hac habitasse platea dictumst. Curabitur auctor mauris eu viverra eleifend. Duis nisl velit, mollis egestas condimentum ac, commodo nec nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus finibus hendrerit libero, ut scelerisque risus gravida at. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBw-Dg-b7W">
+                                <rect key="frame" x="182.5" y="689" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ORE-7f-ZIH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TJo-ZA-NHW" firstAttribute="trailing" secondItem="0AU-6I-VOI" secondAttribute="trailing" id="Oqg-Ec-guW"/>
+                            <constraint firstItem="0AU-6I-VOI" firstAttribute="leading" secondItem="ORE-7f-ZIH" secondAttribute="leading" constant="20" id="WpN-hP-U3E"/>
+                            <constraint firstItem="vBw-Dg-b7W" firstAttribute="top" secondItem="TJo-ZA-NHW" secondAttribute="bottom" constant="50" id="Zix-N5-iM7"/>
+                            <constraint firstItem="TJo-ZA-NHW" firstAttribute="top" secondItem="0AU-6I-VOI" secondAttribute="bottom" constant="100" id="c4F-RR-Ndb"/>
+                            <constraint firstItem="ORE-7f-ZIH" firstAttribute="trailing" secondItem="0AU-6I-VOI" secondAttribute="trailing" constant="20" id="ngB-r9-Qoy"/>
+                            <constraint firstItem="vBw-Dg-b7W" firstAttribute="centerX" secondItem="ORE-7f-ZIH" secondAttribute="centerX" id="oNX-Zo-VDL"/>
+                            <constraint firstItem="0AU-6I-VOI" firstAttribute="top" secondItem="ORE-7f-ZIH" secondAttribute="top" constant="100" id="vbR-Tz-ErO"/>
+                            <constraint firstItem="TJo-ZA-NHW" firstAttribute="leading" secondItem="0AU-6I-VOI" secondAttribute="leading" id="vxC-44-dEG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t8w-at-n8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDh-GX-0Hq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118.840579710145" y="197.54464285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

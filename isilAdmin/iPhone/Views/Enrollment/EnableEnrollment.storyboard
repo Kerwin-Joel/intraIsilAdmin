@@ -12,6 +12,7 @@
         <!--View Controller-->
         <scene sceneID="kBb-CI-Q2B">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-fC-tuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="xGe-XA-xS7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Pr-zI-Jh8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -37,6 +38,11 @@
                                 <state key="normal" title="HABILITADO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mz-cR-atH">
                                 <rect key="frame" x="20" y="314" width="374" height="100"/>
@@ -61,11 +67,12 @@
                             <constraint firstItem="2ta-Kz-nYT" firstAttribute="leading" secondItem="zuR-l4-Smw" secondAttribute="leading" id="rH0-z5-PpB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Wp3-dt-Rou"/>
+                    <navigationItem key="navigationItem" id="Wp3-dt-Rou">
+                        <barButtonItem key="backBarButtonItem" title="back" id="dSN-Wc-JMb"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-fC-tuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298.55072463768118" y="118.52678571428571"/>
+            <point key="canvasLocation" x="562" y="106"/>
         </scene>
     </scenes>
     <resources>
