@@ -26,6 +26,8 @@ class LocationsViewController: UIViewController {
 
 }
     
+   
+    
     @IBDesignable extension UIButton{
         @IBInspectable var cornerRadius: CGFloat{
             set{
@@ -35,4 +37,22 @@ class LocationsViewController: UIViewController {
                 return layer.cornerRadius
             }
         }
+        @IBInspectable var borderWidth: CGFloat {
+            get {
+                return layer.borderWidth
+            }
+            set {
+                layer.borderWidth = newValue
+            }
+          }
+
+          @IBInspectable var borderColor: UIColor? {
+            get {
+                return UIColor(cgColor: layer.borderColor!)
+            }
+            set {
+                layer.borderColor = borderColor?.cgColor
+            }
+          }
     }
+    

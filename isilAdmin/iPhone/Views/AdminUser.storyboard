@@ -91,6 +91,11 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showProfile:" destination="Q3m-hp-spE" eventType="touchUpInside" id="GMN-SP-MWF"/>
                                                         </connections>
@@ -121,6 +126,11 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showCareers:" destination="Q3m-hp-spE" eventType="touchUpInside" id="aOo-Vj-Vt1"/>
                                                         </connections>

@@ -32,6 +32,8 @@ class AdminUserViewController: UIViewController {
         }
     }
     
+    
+    
     func showInfoUser(){
         let strSearch = self.dataUser.currentUser?.uid
 
@@ -43,6 +45,7 @@ class AdminUserViewController: UIViewController {
 
         })
     }
+    
     
     @IBAction func showProfile(_ sender: UIButton) {
         self.performSegue(withIdentifier: "Profile", sender: self)
@@ -68,5 +71,5 @@ class AdminUserViewController: UIViewController {
         self.performSegue(withIdentifier: "Enrollment", sender: self)
     }
     
-
 }
+
