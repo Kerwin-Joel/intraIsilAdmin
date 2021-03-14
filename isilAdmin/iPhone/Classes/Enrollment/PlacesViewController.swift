@@ -20,12 +20,12 @@ class PlacesViewController: UIViewController{
         self.tableView.dataSource = self
         
         self.cargarTabla()
-        self.arrayEnrollment.append(EnrollmentBE(id: "1", name: "Isil Miraflores"))
+        /*self.arrayEnrollment.append(EnrollmentBE(id: "1", name: "Isil Miraflores",)
                                                  
         
         self.arrayEnrollment.append(EnrollmentBE(id: "2", name: "Isil San Isidro"))
         
-        self.arrayEnrollment.append(EnrollmentBE(id: "3", name: "Isil La Molina"))
+        self.arrayEnrollment.append(EnrollmentBE(id: "3", name: "Isil La Molina"))*/
     }
     
   func cargarTabla(){
@@ -37,7 +37,10 @@ class PlacesViewController: UIViewController{
                 
                 print("data", data)
                 let json = data.value as! [String: Any]
-                let enroll = EnrollmentBE(id: data.key, name: json["acepto_reglamento"] as! String)
+                let enroll = EnrollmentBE(id: data.key,
+                                          name: json["acepto_reglamento"] as! String,
+                                          address: json["horario1"] as! String)
+                
 
                 self.arrayEnrollment.append(enroll)
             }

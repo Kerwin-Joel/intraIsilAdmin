@@ -22,7 +22,7 @@ class EnrollmentTableViewCell: UITableViewCell {
     
     private func updateData(){
         self.lblName.text = self.objPlace.place_Name
-        //self.lblAddress.text = self.objPlace.place_Address
+        self.lblAddress.text = self.objPlace.place_Address
         
     }
     
