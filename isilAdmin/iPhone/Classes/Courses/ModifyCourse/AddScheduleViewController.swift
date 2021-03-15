@@ -113,7 +113,7 @@ class AddScheduleViewController: UIViewController {
                                     "profesor": profe,
                                     "sede": sede]
         
-        self.database.child("Cursos/\(id)/horario").getData{ (error, snapshop) in
+        self.database.child("Cursos/\(id)/detalles").getData{ (error, snapshop) in
             self.numberSchedule = String(snapshop.childrenCount)
             if error == nil{
                 self.database.child("Cursos/\(id)/detalles/horario-\(self.numberSchedule ?? "")").setValue(object)

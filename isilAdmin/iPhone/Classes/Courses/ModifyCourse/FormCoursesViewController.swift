@@ -127,7 +127,7 @@ class FormCoursesViewController: UIViewController {
             
         } else {
             
-            self.database.child("Cursos/\(obj.id)").setValue(object)
+            self.database.child("Cursos/\(obj.id)").updateChildValues(object)
             self.navigationController?.popViewController(animated: true)
             
         }
