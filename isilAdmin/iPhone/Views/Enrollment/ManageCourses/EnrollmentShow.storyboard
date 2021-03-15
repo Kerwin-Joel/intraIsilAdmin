@@ -20,11 +20,11 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="162" id="yzD-Fe-Mup">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="162"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EnrollmentShowViewCell" rowHeight="179" id="yzD-Fe-Mup" customClass="EnrollmentShowViewCell" customModule="isilAdmin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="179"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yzD-Fe-Mup" id="Zxe-gd-5e4">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PGJ-dc-Kro">
@@ -89,10 +89,16 @@
                                                 <constraint firstItem="PGJ-dc-Kro" firstAttribute="top" secondItem="Zxe-gd-5e4" secondAttribute="top" constant="20" id="9mm-tY-gtH"/>
                                                 <constraint firstItem="JOM-30-tvf" firstAttribute="top" secondItem="PGJ-dc-Kro" secondAttribute="bottom" constant="20" id="9z8-5U-GX1"/>
                                                 <constraint firstItem="JOM-30-tvf" firstAttribute="leading" secondItem="PGJ-dc-Kro" secondAttribute="leading" id="EU1-jN-nxW"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JOM-30-tvf" secondAttribute="bottom" constant="30" id="XTC-CZ-BVT"/>
                                                 <constraint firstItem="PGJ-dc-Kro" firstAttribute="leading" secondItem="Zxe-gd-5e4" secondAttribute="leading" constant="20" id="mZS-a1-KY0"/>
                                                 <constraint firstItem="JOM-30-tvf" firstAttribute="trailing" secondItem="PGJ-dc-Kro" secondAttribute="trailing" id="w11-qT-s9L"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCourse" destination="55b-C9-ltv" id="dG0-fO-UyH"/>
+                                            <outlet property="lblDate" destination="MXG-FF-TwB" id="wvw-E5-q2x"/>
+                                            <outlet property="lblSchedule" destination="vox-Id-3OK" id="IIJ-BG-iOP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 
 class PlacesViewController: UIViewController{
+    
         
     @IBOutlet weak var tableView: UITableView!
     var arrayEnrollment = [EnrollmentBE]()
@@ -19,8 +20,8 @@ class PlacesViewController: UIViewController{
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        //self.cargarTabla()
-        self.arrayEnrollment.append(EnrollmentBE(id: "1",
+        self.cargarTabla()
+        /*self.arrayEnrollment.append(EnrollmentBE(id: "1",
                                                  student: "Percy Bobbio",
                                                  career: "Desarrollo de Software",
                                                  course: "Desarollo de IOs",
@@ -48,9 +49,11 @@ class PlacesViewController: UIViewController{
                                                          schedule: "horario 2"
                                                          ))
         
+         }*/
+        
     }
     
-  /*func cargarTabla(){
+  func cargarTabla(){
     self.database.child("Matriculas").observe(.value, with: { (snapshot) in
 
         if snapshot.childrenCount > 0 {
@@ -60,8 +63,8 @@ class PlacesViewController: UIViewController{
                 print("data", data)
                 let json = data.value as! [String: Any]
                 let enroll = EnrollmentBE(id: data.key,
-                                          name: json["acepto_reglamento"] as! String,
-                                          address: json["horario1"] as! String)
+                                          student: json["Alumno"] as! String,
+                                          career:  json["horario1"] as! String)
                 
 
                 self.arrayEnrollment.append(enroll)
@@ -74,7 +77,9 @@ class PlacesViewController: UIViewController{
         }
     
   })
-}*/
+}
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? EnrollmentShowViewController{
