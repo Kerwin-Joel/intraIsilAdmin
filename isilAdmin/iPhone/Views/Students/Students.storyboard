@@ -59,6 +59,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="du9-8N-PBx" kind="show" id="zrb-in-c9A"/>
                                 </connections>
@@ -84,6 +89,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="addStudent:" destination="PBk-Df-fAf" eventType="touchUpInside" id="4ip-pd-xS6"/>
                                     <segue destination="sX6-L7-Jf9" kind="show" id="oMZ-TZ-9fQ"/>

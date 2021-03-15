@@ -93,6 +93,11 @@
                                 <state key="normal" title="AGREGAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="addStudent:" destination="Nos-a3-XR9" eventType="touchUpInside" id="ZI8-EN-05s"/>
                                 </connections>

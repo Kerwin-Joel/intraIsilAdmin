@@ -47,6 +47,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showList:" destination="rbh-sB-YO7" eventType="touchUpInside" id="eC3-wU-c2T"/>
                                 </connections>
@@ -72,6 +77,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showAdd:" destination="rbh-sB-YO7" eventType="touchUpInside" id="q8Z-vC-aSY"/>
                                 </connections>

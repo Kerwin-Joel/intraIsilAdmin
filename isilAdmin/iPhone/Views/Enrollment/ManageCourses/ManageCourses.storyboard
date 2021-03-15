@@ -36,7 +36,7 @@
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment>
-                                            <string key="content">Consultar cursos disponibles
+                                            <string key="content">Consultar matriculas procesadas
 </string>
                                             <attributes>
                                                 <color key="NSColor" red="1" green="0.093322322275342873" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +46,7 @@
                                                 <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="( Ver listado de cursos )">
+                                        <fragment content="( Ver listado de matriculas )">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="0.093322322275342873" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -59,6 +59,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="erN-DI-mAd" kind="show" id="8ZE-Ck-Js9"/>
                                 </connections>
@@ -84,6 +89,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="bPH-2Z-uUg" kind="show" id="rx5-AR-lPd"/>
                                 </connections>

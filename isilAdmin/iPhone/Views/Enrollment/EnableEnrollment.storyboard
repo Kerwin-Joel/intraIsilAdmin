@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="kBb-CI-Q2B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-fC-tuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="xGe-XA-xS7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Pr-zI-Jh8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -40,7 +39,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -50,6 +49,11 @@
                                 <state key="normal" title="DESHABILITADO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8dh-s9-RrT"/>
@@ -71,6 +75,7 @@
                         <barButtonItem key="backBarButtonItem" title="back" id="dSN-Wc-JMb"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks9-fC-tuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="562" y="106"/>
         </scene>

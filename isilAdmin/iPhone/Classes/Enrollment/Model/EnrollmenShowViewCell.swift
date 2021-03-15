@@ -15,7 +15,8 @@ class EnrollmentShowViewCell: UITableViewCell {
     
     //var delegate : EnrollmentTableViewCellDelegate?
     
-    public var obj: EnrollmentBE!{
+    //public var obj: EnrollmentBE!{
+        public var objDetail:DetailsBE!{
         didSet{
             self.updateData()
         }

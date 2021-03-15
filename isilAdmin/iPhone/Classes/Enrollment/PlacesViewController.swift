@@ -64,7 +64,7 @@ class PlacesViewController: UIViewController{
                 let json = data.value as! [String: Any]
                 let enroll = EnrollmentBE(id: data.key,
                                           student: json["Alumno"] as! String,
-                                          career:  json["horario1"] as! String)
+                                          career:  json["Carrera"] as! String)
                 
 
                 self.arrayEnrollment.append(enroll)
@@ -108,13 +108,6 @@ extension PlacesViewController: UITableViewDataSource{
         let cellIdentifier = "EnrollmentTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! EnrollmentTableViewCell
         cell.objPlace = self.arrayEnrollment[indexPath.row]
-        
-        
-        let r = CGFloat.random(in: 0...255)/255
-        let g = CGFloat.random(in: 0...255)/255
-        let b = CGFloat.random(in: 0...255)/255
-        let color = UIColor(displayP3Red: r, green: g, blue: b, alpha: 1)
-        cell.backgroundColor = color
         
         return cell
     }

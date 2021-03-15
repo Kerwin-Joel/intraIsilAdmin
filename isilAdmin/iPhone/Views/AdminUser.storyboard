@@ -128,7 +128,7 @@
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="50"/>
+                                                                <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -164,6 +164,11 @@
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                             </preferredSymbolConfiguration>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showCourses:" destination="Q3m-hp-spE" eventType="touchUpInside" id="VZR-Z0-eqj"/>
                                                         </connections>
@@ -194,6 +199,11 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showLocations:" destination="Q3m-hp-spE" eventType="touchUpInside" id="KkB-2I-crd"/>
                                                         </connections>
@@ -224,6 +234,11 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showStudents:" destination="Q3m-hp-spE" eventType="touchUpInside" id="6PE-fh-OlM"/>
                                                         </connections>
@@ -254,6 +269,11 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showEnrollment:" destination="Q3m-hp-spE" eventType="touchUpInside" id="KSK-2G-7N3"/>
                                                         </connections>

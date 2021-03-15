@@ -84,6 +84,11 @@
                                         <state key="normal" title="AGREGAR HORARIO">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addSchedule:" destination="3Ww-Cd-ROI" eventType="touchUpInside" id="BYx-IO-9zg"/>
                                         </connections>
